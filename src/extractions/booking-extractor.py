@@ -116,10 +116,11 @@ def scrape_bookings(driver):
     return bookings
 
 
-with setup(BOOKING_URL) as driver:
-    output_dir_data_raw = os.path.join(BASE_DIR, "..", "..", "data", "raw")
-    os.makedirs(output_dir_data_raw, exist_ok=True)
-    booking_data_path = os.path.join(output_dir_data_raw, "booking.json")
-    with open(booking_data_path, "w", encoding="utf-8") as outfile:
-        booking_data = scrape_bookings(driver)
-        json.dump(booking_data, outfile)
+# with setup(BOOKING_URL) as driver:
+#     output_dir_data_raw = os.path.join(BASE_DIR, "..", "..", "data", "raw")
+#     os.makedirs(output_dir_data_raw, exist_ok=True)
+#     booking_data_path = os.path.join(output_dir_data_raw, "booking.json")
+#     with open(booking_data_path, "w", encoding="utf-8") as outfile:
+#         booking_data = scrape_bookings(driver)
+#         json.dump(booking_data, outfile)
+
