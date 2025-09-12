@@ -73,4 +73,3 @@ def scrape_room_dim(driver):
 #         booking_data = scrape_room_dim(driver)
 #         json.dump(booking_data, outfile)
 
-

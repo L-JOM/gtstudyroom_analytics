@@ -124,3 +124,5 @@ def scrape_bookings(driver):
 #         booking_data = scrape_bookings(driver)
 #         json.dump(booking_data, outfile)
 
+
+def lambda_executor():
